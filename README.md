@@ -23,3 +23,8 @@ Riesgo y endeudamiento
 ¿Cómo se distribuye el saldo deudor entre los distintos segmentos de cartera?
 ¿Los clientes activos difieren en su nivel de deuda respecto a los inactivos?
 ¿Existen grupos de mayor riesgo (alto saldo deudor + baja cantidad de productos + inactividad)?
+
+import pandas as pd
+
+url = "https://drive.google.com/drive/folders/1Qa9KU_Evs1HDnNI582L7jlMlcaW2ZSrc?usp=sharing"
+df = pd.read_csv(url)
