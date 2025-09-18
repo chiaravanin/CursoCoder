@@ -28,3 +28,10 @@ import pandas as pd
 
 url = "https://drive.google.com/drive/folders/1Qa9KU_Evs1HDnNI582L7jlMlcaW2ZSrc?usp=sharing"
 df = pd.read_csv(url)
+
+#Cantidad de filas y columnas del dataset
+df.shape
+df.head(5)
+
+#Distribución Clientes: 1 - Activos vs Inactivos
+actividad = df.groupby("IND_ACTIVO").agg({"CANTIDAD_CLIENTES": "count"})
